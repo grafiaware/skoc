@@ -1,0 +1,24 @@
+{
+    "name": "grafiaware/plav",
+    "description": "web Plav",
+    "license": "MIT",
+    "keywords": ["Plav", "pes", "Grafia"],
+    "authors": [
+        {
+            "name": "Kateřina Šlehoferová",
+            "email": "slehoferova@grafia.cz"
+        },
+        {
+            "name": "Petr Svoboda",
+            "email": "svoboda@grafia.cz"
+        }
+    ],
+    "require": {
+        "pes/pes": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ""
+        }
+    }
+}

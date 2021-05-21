@@ -1,0 +1,13 @@
+[debug] [2021-05-21 14:38:24] Logger start. Log file: C:/xampp/htdocs/Skoc/Logs/Bootstrap/Bootstrap.log. Mode 'w+'.
+[info] Bootstrap: include "SetBootstrapSettingsPath.php" define("PES_BOOTSTRAP_SETINGS_PATH";bootstrap/)
+[info] Bootstrap: include SetBootstrapDefaults.php
+[info] SetBootstrapDefaults: define("PES_BOOTSTRAP_LOGS_BASE_PATH";C:\xampp\htdocs\Skoc/)
+[info] SetBootstrapDefaults: define("PES_BOOTSTRAP_LOGS_PATH";Logs/Bootstrap/)
+[info] SetBootstrapDefaults: define("PES_BOOTSTRAP_ERROR_LOGS_PATH";Logs/Errors/)
+[info] SetBootstrapDefaults: define("PES_PRODUCTION_MACHINE_HOST_NAME";Stroj_definovaný_jako_produkční_server_v_BootstratDefaults.php)
+[info] Bootstrap: include C:\xampp\htdocs\Skoc\vendor\autoload.php
+[info] SetGlobals:  nastaveny hodnoty - force_development: , force_production: , development: , production: , running_on_production_host:  .
+[warning] CheckPhpIni: Je vypnutý 'session.use_strict_mode'!
+[notice] CheckPhpIni: Garbage collection se spouští jen jednou za 1000 spuštění skriptu! Např. session tak může být uklizena za dlouhou dobu.
+[info] SetCzechZone: Date default timezone set: date_default_timezone_set("Europe/Prague");
+[info] SetCzechZone: Set locale: Czech_Czechia.1250

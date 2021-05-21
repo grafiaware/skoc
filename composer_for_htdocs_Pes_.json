@@ -1,0 +1,29 @@
+{
+    "name": "Pes-views",
+    "description": "Psí frameworkové views.",
+    "license": "na dotaz",
+    "keywords": ["pes", "framework", "view"],
+    "authors": [
+        {
+            "name": "Petr Svoboda",
+            "email": "svoboda@grafia.cz"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "//localhost/c$/xampp/htdocs/Pes",
+            "options": {
+                "symlink": false
+            }
+        }
+    ],
+    "require": {
+        "Pes/Pes": "*"
+    },    
+    "autoload": {
+        "psr-4": {
+            "Model\\": "Model"
+        }
+    }   
+}

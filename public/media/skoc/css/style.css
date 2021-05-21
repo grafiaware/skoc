@@ -1,0 +1,494 @@
+body{
+    background-color: #282828;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.ui.active.progress .bar::after{
+    animation: none;
+}
+
+header, nav, main, footer{
+    background-color: white;
+    color: black;
+}
+
+/*-----------------------------------------------------------------hlavicka---*/
+header{
+    
+}
+.obrazkovy-titulek{ 
+    margin-left: 20px;
+} 
+.obrazkovy-podtitulek{
+    float: right;
+    margin-right: -10px;
+    transform: translateY(-10%);
+}
+.logo-Grafia{
+    vertical-align: top;
+    float: right;
+    width: 25%;
+}
+
+/*---------------------------------------------------------------------menu---*/
+.vodorovne-menu .menu{
+    min-height: 3.8em;
+    background: 0;
+    background-image: url("../images/fixedM.png");
+    padding-right: 6%;
+    font-family: 'Releway', sans-serif;
+}
+.vodorovne-menu .menu .right.menu{
+    background: 0;
+}
+.hamburger{
+    display: none;
+}
+#hamburger-menu .dropdown a.item{
+    padding: 1.5em 2.5em !important;
+}
+
+/*--------------------------------------------------------------------obsah---*/
+
+/*-------------------------------------------------uvodni stranka---*/
+
+/*section anotace*/
+section.anotace{
+    padding: 60px 0 0;
+}
+section.anotace h2{
+    color: #8FAE23;
+    transform: translateX(-18.4%);
+}
+section.anotace h2::after{
+    background-color: #DAE4B9;
+}
+section.anotace p{
+    width: 90%;
+}
+section.anotace img{
+    transform: translateY(-25%) translateX(2%);
+    width: 200px;
+    padding-top: 10px; 
+    position: relative;
+    z-index: 5;
+}
+section.anotace p.popisek-obrazku{
+    font-size: 0.83rem;
+    position: relative;
+    width: auto;
+    left: 50%;
+    transform: translateY(-50%) translateX(-75%);
+    bottom: 15%;
+}
+
+/*section tem-okruhy*/
+section.tem-okruhy{
+    background-image: url("../images/SKOC-web-svetly_2.png");
+    /*background-attachment: fixed;*/
+    padding: 40px 0 50px;
+    color: #000;
+}
+section.tem-okruhy h2{
+    margin-bottom: 60px;
+    color: #000;
+}
+section.tem-okruhy h2::after{
+    background-color:  #d8d8d8;
+}
+section.tem-okruhy ul.list li::before{
+    color: #000;
+}
+
+/*section ukazka*/
+section.ukazka{
+    margin: 55px 0;
+}
+section.ukazka h2{
+    color: #8FAE23;
+    transform: translateX(-18.4%);
+}
+section.ukazka h2::after{
+    background-color: #DAE4B9;
+}
+section.ukazka a{
+    margin-top: 25px;
+}
+section.ukazka a:hover p{
+    background: #aaaaaa;
+}
+section.ukazka p{
+    margin-bottom: 25px;
+    color: #fff;
+    background-color: #878b8d;
+    margin: 0 15px;
+    text-align: center;
+}
+
+/*section citat*/
+section.citat{
+    background-image: url("../images/pozadi-citat.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 30px 0; 
+}
+section.citat p{
+    font-size: 1.2rem;
+    width: 90%;
+}
+section.citat p:first-child::before,
+section.citat p:first-child::after{
+    content: '„';    
+    height: 140px;
+    font-size: 6.5rem;
+    opacity: 0.4;
+}
+section.citat p:first-child::before{
+    position: absolute;
+    left: -5%;
+    bottom: 0;
+}
+section.citat p:first-child::after{
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+section.citat p:last-child{
+    display: block;
+    text-align: right;
+    font-weight: 700;
+}
+
+/*section kontakt*/
+section.kontakt{
+    padding: 30px 0 100px;
+    margin-bottom: -14px;
+}
+section.kontakt h2{
+    color: #8FAE23;
+    transform: translateX(0);  
+}
+section.kontakt h2::after{
+    background-color: #DAE4B9;
+}
+section.kontakt table, section.kontakt table tr td{
+    border: 0 !important;
+}
+section.kontakt table tr:nth-child(2n+1){
+    background-color: #f8f8f8;
+}
+section.kontakt tr:last-child{
+    text-align: center;
+}
+section.kontakt a{
+    text-decoration: none;
+    color: #266e16;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+section.kontakt a:hover{
+    text-decoration: underline;
+    color: #266e16;
+}
+section.kontakt span{
+    position: relative;
+    top: 10%;
+}
+
+/*------------------------------------------------------pro firmy---*/
+main.pro_firmy{
+    padding-top: 60px;
+}
+main.pro_firmy i{
+    font-size: 3em;
+    margin: 20px auto 10px;
+}
+main.pro_firmy .column h2{
+    color: #8FAE23;
+}
+main.pro_firmy .column h2::after{
+    background-color: #DAE4B9;
+}
+main.pro_firmy h3{
+    font-size: 1.5em;
+    color: #4e6012;
+    padding: 10px 0;
+    text-align: left;
+    font-weight: 200 !important;
+    width: 75%;
+    margin: auto;
+}
+main.pro_firmy p{
+    margin: auto;
+    padding: 10px 0;
+}
+main.pro_firmy .centered.grid:last-child p{
+    margin-bottom: 100px;
+    width: 75%;
+    text-align: center; 
+    font-size: 20px;
+    color: #4e6012;
+}
+
+/*-------------------------------------------------rady uspesnych---*/
+main.rady_uspesnych{
+    padding: 60px 0 100px;
+}
+main.rady_uspesnych h2{
+    color: #8FAE23; 
+}
+main.rady_uspesnych h2::after{
+    background-color: #DAE4B9;
+}
+main.rady_uspesnych > p{
+    color: #4e6012;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+main.rady_uspesnych .segment h3{
+    margin-left: 30px;
+}
+main.rady_uspesnych .segment p:first-of-type{
+    margin-bottom: 20px;
+}
+
+
+
+/*------------------------------------------------------------------nadpisy---*/
+h2{
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 35px;
+    padding: 12px;
+    text-align: center;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    width: 55px;
+    height: 6px;
+    border: 0;
+    margin-bottom: 25px;
+}
+
+
+/*-------------------------------------------------------------uprava textu---*/
+
+/*odkazy*/
+a.textovy-odkaz:hover{
+    text-decoration: underline;
+    color:  #266e16;
+}
+a.textovy-odkaz{
+    text-decoration: none;
+    color:  #266e16;
+    transition: 0.3s;
+    font-weight: 700;
+}
+a{
+    color: #000;
+    cursor: pointer;
+}
+
+
+/*------------------------------------media-----------------------------------*/
+
+@media (max-width: 1500px){
+    /*--------------------hlavicka---*/
+    .obrazkovy-titulek{
+        max-width: 65%;
+    }
+    .obrazkovy-podtitulek{
+        max-width: 85%;
+        transform: translateY(-10%);
+    }
+    .logo-Grafia{
+        max-width: 19%;
+    }
+    
+    /*-------------------------menu---*/
+    .vodorovne-menu .menu{
+        padding-right: 6%;
+
+    }
+    .vodorovne-menu .menu .item{
+        font-size: 1.1rem;
+    }
+    
+    /*------------------------uvod---*/
+    /*section anotace*/
+    section.anotace{
+        padding: 30px 0 20px;
+    }
+    section.anotace h2{
+        margin-top: 30px;
+    }
+    section.anotace img{
+        transform: translateY(-25%) translateX(-50%);
+        left: 50%
+    }
+    section.anotace p.popisek-obrazku{
+        transform: translateY(-50%) translateX(-50%);
+    }
+    section.anotace h2.publikace{
+        font-size: 2em;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    /*section citat*/
+    section.citat p{
+        width: 100%;
+    }
+    section.citat p:first-child::after{
+        right: -5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    /*--------------------hlavicka---*/
+    .image img.obrazek-hlavicka{
+        max-width: 110%;
+    }
+    .obrazkovy-titulek{
+        margin-left: 20px;
+    }
+    .logo-Grafia{
+        max-width: 18%;
+    }
+    
+    /*------------------------menu---*/
+    .vodorovne-menu .menu{
+        padding-right: 6%;
+    }
+    
+    /*------------------------uvod---*/
+    /*section anotace*/
+    section.anotace{
+        padding-bottom: 30px;
+    }
+    section.anotace h2{
+        padding-bottom: 30px;
+    }
+    section.anotace img{
+        transform: translateY(-10%) translateX(-50%);
+        left: 50%;
+    }
+    section.anotace p.popisek-obrazku{
+        transform: translateY(65%) translateX(-50%);
+    }
+    /*section citat*/
+    section.citat p{
+        font-size: 1.1em;
+    }
+    section.citat p:first-child::before,
+    section.citat p:first-child::after{
+        font-size: 5.5em;
+    }
+    /*section kontakt*/
+    section.kontakt table.table{
+        width: 140%;
+        margin-left: -50px;
+    }
+    
+    /*---------------------nadpisy---*/
+    h2{
+        margin: 15px 0 20px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 991px) {
+    /*--------------------hlavicka---*/
+    .obrazkovy-titulek{
+        margin: 25px 0 0 10px;
+        max-width: 75%;
+    }
+    
+    /*------------------------menu---*/
+    .vodorovne-menu .menu .item{
+        font-size: 1.0rem;
+        min-height: 3.8em;
+        padding-right: 20px;
+    }
+    .vodorovne-menu .menu{
+        padding-right: 2%;
+    }
+    
+    /*------------------------uvod---*/
+    /*section kontakt*/
+    section.kontakt table.table{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    /*------------------------menu---*/
+    .hamburger{
+        display: block;
+    }
+    .hamburger .menu{
+        font-size: 18px;
+    }
+    .vodorovne-menu{
+        display: none;
+    } 
+}
+
+@media (max-width: 768px) {
+    /*--------------------hlavicka---*/
+    .obrazkovy-titulek{
+        max-width: 65%;
+        margin-top: 0;
+        transform: translateY(5%);
+    }
+    .logo-Grafia{
+        margin-top: -20px;
+    }
+    .obrazkovy-podtitulek{
+        max-width: 75%; 
+        margin-top: -20px;
+    }
+    
+    /*------------------------uvod---*/
+    /*section anotace*/
+    section.anotace{
+        margin-bottom: 0;
+    }
+    section.anotace h2{
+        transform: translateX(0);  
+    }
+    section.anotace img{
+        transform: translateY(-10%) translateX(-50%);
+        left: 50%;
+        width: 160px;   
+    }
+    section.anotace p.popisek-obrazku{
+        transform: translateY(10%) translateX(-50%);
+        bottom: 10%;
+        left: 50%;
+        font-size: 0.75em;
+    }
+    /*section tem okruhy*/
+    section.tem-okruhy{
+        padding: 20px 0 25px;
+    }
+    section.tem-okruhy h2{
+        margin-bottom: 35px;
+    }
+    /*section ukazka*/
+    section.ukazka{
+        margin: 20px 0 10px;
+    }
+    section.ukazka h2{
+        transform: translateX(0);  
+    }
+}
