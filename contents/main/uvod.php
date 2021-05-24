@@ -1,8 +1,13 @@
+<?php
+use Pes\Text\Text;
+use Pes\Text\Html;
+?>
+                <main <?= Html::attributes(['class' => $templateName]) ?> >
                         <section class="anotace">
-                            <?= $this->insert("contents/main/uvod/anotace.php", $anotace)?> 
+                            <?= $this->insert("contents/main/uvod/anotace.php", $anotace)?>
                         </section>
-                        <section class="tem-okruhy"> 
-                            <?= $this->insert("contents/main/uvod/tematickeOkruhy.php", $tematickeOkruhy)?>  
+                        <section class="tem-okruhy">
+                            <?= $this->insert("contents/main/uvod/tematickeOkruhy.php", $tematickeOkruhy)?>
                         </section>
                         <section class="ukazka">
                             <?= $this->insert("contents/main/uvod/ukazka.php", $ukazka) ?>
@@ -11,4 +16,5 @@
                             <?= $this->insert("contents/main/uvod/citat.php", $citat) ?>
                         </section>
                         <?= $this->insert("contents/main/kontakt.php", $kontakt) ?>
+                </main>
                         

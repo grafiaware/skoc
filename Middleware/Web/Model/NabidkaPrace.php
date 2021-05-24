@@ -1,6 +1,6 @@
 <?php
 
-namespace Model;
+namespace Middleware\Web\Model;
 
 /**
  * Description of Prace

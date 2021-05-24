@@ -1,5 +1,5 @@
 <?php
-namespace Model;
+namespace Middleware\Web\Model;
 
 
 class ProFirmy{

@@ -2,6 +2,7 @@
 use Pes\Text\Text;
 use Pes\Text\Html;
 ?>
+                <main <?= Html::attributes(['class' => $templateName]) ?> >
                         <section class="kontakt">
                             <h2><?= Text::filter('mono',$nadpisSekce)?></h2>
                             <div class="ui centered grid">
@@ -11,3 +12,4 @@ use Pes\Text\Html;
                                 </div>
                             </div>
                         </section>
+                </main>

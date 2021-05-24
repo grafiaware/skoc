@@ -9,14 +9,13 @@
 namespace Container;
 
 use Pes\Container\ContainerConfiguratorAbstract;
-use Pes\Http\RequestInterface;
 
-use Model\UvodniStranka;
-use Model\ProFirmy;
-use Model\RadyUspesnych;
-use Model\Kontakt;
-use Model\Kraje;
-use Model\NabidkaPrace;
+use Middleware\Web\Model\UvodniStranka;
+use Middleware\Web\Model\ProFirmy;
+use Middleware\Web\Model\RadyUspesnych;
+use Middleware\Web\Model\Kontakt;
+use Middleware\Web\Model\Kraje;
+use Middleware\Web\Model\NabidkaPrace;
 /**
  * Description of ContextDefinition
  *
