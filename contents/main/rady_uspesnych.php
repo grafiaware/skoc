@@ -2,7 +2,7 @@
 use Pes\Text\Text;
 use Pes\Text\Html;
 ?>
-                <main <?= Html::attributes(['class' => $templateName]) ?> >
+                <main class="rady_uspesnych" >
                     <h2><?= Text::filter('mono', $nadpisSekce) ?></h2>
                     <?= Html::p(Text::filter('mono', $popisSekce)) ?>
                     <div class="ui centered grid">

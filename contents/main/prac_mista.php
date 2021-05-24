@@ -2,7 +2,7 @@
 use Pes\Text\Text;
 use Pes\Text\Html;
 ?>
-                <main <?= Html::attributes(['class' => $templateName]) ?> >
+                <main class="prac_mista" >
                     <h2><?= Text::filter('mono',$nadpisSekce)?></h2>
                     <div class="ui centered grid">
                         <div class="sixteen wide mobile ten wide tablet fifteen wide computer column">

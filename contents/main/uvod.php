@@ -2,7 +2,7 @@
 use Pes\Text\Text;
 use Pes\Text\Html;
 ?>
-                <main <?= Html::attributes(['class' => $templateName]) ?> >
+                <main class="uvod" >
                         <section class="anotace">
                             <?= $this->insert("contents/main/uvod/anotace.php", $anotace)?>
                         </section>
@@ -17,4 +17,3 @@ use Pes\Text\Html;
                         </section>
                         <?= $this->insert("contents/main/kontakt.php", $kontakt) ?>
                 </main>
-                        

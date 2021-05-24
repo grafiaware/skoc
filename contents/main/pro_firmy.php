@@ -2,7 +2,7 @@
 use Pes\Text\Text;
 use Pes\Text\Html;
 ?>
-                <main <?= Html::attributes(['class' => $templateName]) ?> >
+                <main class="pro_firmy" >
                     <div class="ui centered grid">
                         <div class="fifteen wide mobile ten wide tablet eight wide computer column justified">
                              <?= $this->repeat("contents/main/pro_firmy/infoProFirmy.php", $infoProFirmy); ?>
