@@ -8,7 +8,7 @@ use Pes\Text\Html;
                     <div class="ui centered grid">
                         <div class="fourteen wide column">
                             <div class="ui stretched two column grid">
-                                <?= $this->repeat("contents/main/rady_uspesnych/rozdeleni_sloupcu.php", $dataSekce)?>
+                                <?= $this->repeat("contents/main/rady_uspesnych/rozdeleni_sloupcu.php", $rady)?>
                             </div>
                         </div>
                     </div>

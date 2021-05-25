@@ -3,11 +3,11 @@ namespace Middleware\Web\Model;
 
 
 class RadyUspesnych{
-    
+    private $nadpisSekce = 'Rady úspěšných';
+
+    private $popisSekce = 'Co byste doporučil/a absolventům vysokých škol při startu do "reálného života"? Co vám osobně pomohlo při rozvoji kariéry?';
+
     private $rady = [
-        'nadpisSekce' => 'Rady úspěšných',
-        'popisSekce' => 'Co byste doporučil/a absolventům vysokých škol při startu do "reálného života"? Co vám osobně pomohlo při rozvoji kariéry?',
-        'dataSekce' => [
             [
                 'sloupec' => [
                     [
@@ -32,7 +32,7 @@ class RadyUspesnych{
                     [
                         'jmeno' => 'RNDr. Luděk Kabela',
                         'zamestnani' => 'Sinclair Corporation CZ, a. s., manažer',
-                        'text' => 'Neznám univerzální radu. Tedy vlastně znám. Nikdo, kdo neabsolvuje cestu „tam a zase zpátky“, nikdo, kdo neodejde do světa „na zkušenou“, není výjimečný. 
+                        'text' => 'Neznám univerzální radu. Tedy vlastně znám. Nikdo, kdo neabsolvuje cestu „tam a zase zpátky“, nikdo, kdo neodejde do světa „na zkušenou“, není výjimečný.
             Pokud se chcete vymanit z šedi, první, co udělejte, odejděte „na zkušenou“, protože později v životě to už uděláte jen těžko.
             Při rozvoji mojí osobní kariéry mi pomohlo, že mne od 10 let vychovávali úplně výjimeční preceptoři. Veselovský, Hanák, Andreska, Černý, Beneš. Prostě plejáda nejlepších zoologů, etnografů a archeologů. To mne tolik predestinovalo, že je těžké rozpoznat, co jiného ještě mělo zásadní vliv.
 
@@ -65,7 +65,7 @@ class RadyUspesnych{
                         'zamestnani' => 'Západočeská univerzita v Plzni, vědecko-výzkumný pracovník a projektový manažer',
                         'text' => '1) Vždycky si vytyčte jasné cíle a jděte za nimi. Nenechte se odradit neúspěchem a rozhodně se nebojte postavit velkým výzvám a řešení složitých problémů.
 
-            2) Vždycky jsem se snažil dělat něco navíc. Z hlediska zkušeností pak pro mě byly neocenitelné zahraniční stáže, kde se můžete naučit nové věci, přístupy a získáte neocenitelné kontakty.' 
+            2) Vždycky jsem se snažil dělat něco navíc. Z hlediska zkušeností pak pro mě byly neocenitelné zahraniční stáže, kde se můžete naučit nové věci, přístupy a získáte neocenitelné kontakty.'
                     ],
                     [
                         'jmeno' => 'Ing. Ivo Dubský',
@@ -86,9 +86,16 @@ class RadyUspesnych{
             Tomu se možná budou smutně ušklebovat rodiče absolventů, ale sami absolventi na to budou zírat jak ty jalůvky a říkat si: “zas jeden chytrej“.'
                     ]
                 ]
-            ]
         ]
     ];
+
+    public function getNadpisSekce() {
+        return $this->nadpisSekce;
+    }
+
+    public function getPopisSekce() {
+        return $this->popisSekce;
+    }
 
     public function getRady(){
         return $this->rady;

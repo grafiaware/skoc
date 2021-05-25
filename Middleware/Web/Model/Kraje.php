@@ -8,13 +8,14 @@ namespace Middleware\Web\Model;
  * @author pes2704
  */
 class Kraje {
-    
+
     const MAPA_IMAGES_PATH = "public/images/mapa/";
-    
-    private $defaultQueryVariables = ["main"=>"prac_mista"]; 
-    
+
+    private $defaultQueryVariables = ["main"=>"prac_mista"];
+
+    private $nadpisSekce = 'Které firmy ve vašem kraji nabízejí místa pro absolventy?';
+
     private $vyberKraje = [
-            'nadpisSekce' => 'Které firmy ve vašem kraji nabízejí místa pro absolventy?',
             'seznamKraju' => [
                     [
                         "id" => "plzensky",
@@ -33,12 +34,12 @@ class Kraje {
                     ],
                     [
                         "id" => "moravskoslezsky",
-                        "nazevKraje" => "Moravskoslezský kraj", 
+                        "nazevKraje" => "Moravskoslezský kraj",
                         "imgAttributes"=>["src"=>self::MAPA_IMAGES_PATH."moravskoslezsky.png", "alt"=>"Moravskoslezský"],
                     ],
                 ]
             ];
-    
+
     public function findPodleIdKraje($idKraje) {
         if (isset($this->pracePodleIdKraje[$idKraje])) {
             return $this->pracePodleIdKraje[$idKraje];
@@ -46,10 +47,14 @@ class Kraje {
             throw new \UnexpectedValueException("Neznáma hodnota parametru idKraje $idKraje");
         }
     }
-    
-    public function getVyberKraje($id){  
+
+    public function getNadpisSekce() {
+        return $this->nadpisSekce;
+    }
+
+    public function getVyberKraje($id){
         foreach ($this->vyberKraje['seznamKraju'] as $key=>$value) {
-            $optionAttributes = ["value"=>$value['id']];    // návratové hodnoty option v selectu            
+            $optionAttributes = ["value"=>$value['id']];    // návratové hodnoty option v selectu
 
             if ($value['id'] == $id) {
                  $optionAttributes["selected"]=TRUE;  // selected option v selectu

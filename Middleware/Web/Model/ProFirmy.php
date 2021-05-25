@@ -3,8 +3,7 @@ namespace Middleware\Web\Model;
 
 
 class ProFirmy{
-    private $data = [
-        "infoProFirmy" => [
+    private $infoProFirmy = [
             [
                 "nadpis" => "Pro firmy",
                 "podnadpis" => "Zaujměte absolventy dřív než jiné firmy! Získejte ty nejlepší! ",
@@ -15,14 +14,20 @@ Máte tak jedinečnou příležitost oslovit své potencionální zaměstnance v
 Podpořte svou spolupráci s univerzitami netradiční formou inzerce v publikaci SKOČ. Pamatujte, že zásah více komunikačními kanály funguje nejlépe!
 
 Personální inzerce je možná formou barevného interátu na konci knihy či textu v psané části. Jestliže publikaci naznáte, vyžádejte si ceník či ukázky z knihy."
-            ]
-        ],
-        "kontakt" => "S dotazy nás neváhejte kontaktovat e-mailem na sekretariat@grafia.cz či telefonicky na 377 227 701"
-    ];
-    
-    public function getDataProFirmy(){
-        return $this->data; 
+
+            ],
+        ];
+
+    private $kontakt = "S dotazy nás neváhejte kontaktovat e-mailem na sekretariat@grafia.cz či telefonicky na 377 227 701";
+
+    public  function getInfoProFirmy() {
+        return $this->infoProFirmy;
     }
-            
+
+    public function getKontakt() {
+        return $this->kontakt;
+    }
+
+
 }
 

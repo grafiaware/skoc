@@ -52,25 +52,30 @@ class Main {
 //        break;
         case 'kontakt':
             $template = "contents/main/kontakt.php";
-            $data = $this->container->get(Kontakt::class)->getKontakt();
+            $data = [
+                'nadpisSekce' => $this->container->get(Kontakt::class)->getNadpisSekce(),
+                'dataSekce' => $this->container->get(Kontakt::class)->getDataSekce(),
+                'tymGrafia' => $this->container->get(Kontakt::class)->getTymGrafia()];
         break;
         case 'prac_mista':
             $template = "contents/main/prac_mista.php";
-            $data = $this->container->get(Kraje::class)->getVyberKraje($kraj) +
-                ['nabidkaPraceVKraji' => $this->container->get(NabidkaPrace::class)->findPodleIdKraje($kraj)];
+            $data = [
+                'nadpisSekce' => $this->container->get(Kraje::class)->getNadpisSekce(),
+                'vyberKraje' => $this->container->get(Kraje::class)->getVyberKraje($kraj),
+                'nabidkaPraceVKraji' => $this->container->get(NabidkaPrace::class)->findPodleIdKraje($kraj)];
         break;
         case 'rady_uspesnych':
             $template = "contents/main/rady_uspesnych.php";
-            $data = $this->container->get(RadyUspesnych::class)->getRady();
+            $data = [
+                'nadpisSekce' => $this->container->get(RadyUspesnych::class)->getNadpisSekce(),
+                'popisSekce' => $this->container->get(RadyUspesnych::class)->getPopisSekce(),
+                'rady' => $this->container->get(RadyUspesnych::class)->getRady()];
         break;
-//        case 'pribeh':
-//        $template = "contents/main/pribeh.php"
-//            $data = $this->container->get(Pribehy::class)->getPribehStudenta($pribeh) +
-//                ['perexyOstatni'=> $this->container->get(Pribehy::class)->findPribehyPerexyOstatni($pribeh)];
-//        break;
         case 'pro_firmy':
             $template = "contents/main/pro_firmy.php";
-            $data = $this->container->get(ProFirmy::class)->getDataProFirmy();
+            $data = [
+                'infoProFirmy' => $this->container->get(ProFirmy::class)->getInfoProFirmy(),
+                'kontakt' => $this->container->get(ProFirmy::class)->getKontakt()];
         break;
         case 'uvod':
         default:
@@ -81,24 +86,26 @@ class Main {
                 'tematickeOkruhy' => $this->container->get(UvodniStranka::class)->getTematickeOkruhy(),
                 'ukazka' => $this->container->get(UvodniStranka::class)->getUkazka(),
                 'citat' => $this->container->get(UvodniStranka::class)->getCitat(),
-                'kontakt' => $this->container->get(Kontakt::class)->getKontakt(),
+                'kontakt' => [
+                        'nadpisSekce' => $this->container->get(Kontakt::class)->getNadpisSekce(),
+                        'dataSekce' => $this->container->get(Kontakt::class)->getDataSekce(),
+                        'tymGrafia' => $this->container->get(Kontakt::class)->getTymGrafia()],
                 ];
         }
 
-        $mainTemplate = (new PhpTemplate($template));
         $view = new View();
         $view->setRenderer(new PhpTemplateRenderer());
-        $view->setTemplate($mainTemplate);
+        $view->setTemplate(new PhpTemplate($template));
         $view->setData($data);
 
-        $layoutTemplate = (new PhpTemplate('contents/layout.php'));
         $compositeView = new CompositeView();
         $compositeView->setRenderer(new PhpTemplateRenderer());
-        $compositeView->setTemplate($layoutTemplate);
+        $compositeView->setTemplate(new PhpTemplate('contents/layout.php'));
+
         $compositeView->appendComponentView($view, 'main');
 
         $response = new Response(200);
-        $size = $response->getBody()->write($compositeView);
+        $size = $response->getBody()->write($compositeView->getString());
         return $response;
     }
 
