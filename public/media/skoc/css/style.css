@@ -161,38 +161,38 @@ section.citat p:last-child{
 }
 
 /*section kontakt*/
-section.kontakt{
+main.kontakt{
     padding: 30px 0 100px;
     margin-bottom: -14px;
 }
-section.kontakt h2{
+main.kontakt h2{
     color: #8FAE23;
     transform: translateX(0);  
 }
-section.kontakt h2::after{
+main.kontakt h2::after{
     background-color: #DAE4B9;
 }
-section.kontakt table, section.kontakt table tr td{
+main.kontakt table, main.kontakt table tr td{
     border: 0 !important;
 }
-section.kontakt table tr:nth-child(2n+1){
+main.kontakt table tr:nth-child(2n+1){
     background-color: #f8f8f8;
 }
-section.kontakt tr:last-child{
+main.kontakt tr:last-child{
     text-align: center;
 }
-section.kontakt a{
+main.kontakt a{
     text-decoration: none;
     color: #266e16;
     font-size: 18px;
     transition: 0.3s;
     font-weight: 700;
 }
-section.kontakt a:hover{
+main.kontakt a:hover{
     text-decoration: underline;
     color: #266e16;
 }
-section.kontakt span{
+main.kontakt span{
     position: relative;
     top: 10%;
 }
@@ -393,7 +393,7 @@ a{
         font-size: 5.5em;
     }
     /*section kontakt*/
-    section.kontakt table.table{
+    main.kontakt table.table{
         width: 140%;
         margin-left: -50px;
     }
@@ -424,7 +424,7 @@ a{
     
     /*------------------------uvod---*/
     /*section kontakt*/
-    section.kontakt table.table{
+    main.kontakt table.table{
         width: 100%;
         margin-left: 0px;
     }
