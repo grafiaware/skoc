@@ -14,30 +14,24 @@ class NabidkaPrace {
             "nazevKraje" => "Plzeňský kraj",
             "nabidka" => [
                 "zamestnavatele" => [
-                    "Sony" => [
-                        "nazev" => "Sony DADC Czech Republic, s.r.o.",
-                        "www" => "sonydadc.jobs.cz"],
-                    "ČEZ" => [
-                        "nazev" => "ČEZ a.s.",
-                        "www" => "www.cez.cz"],
-                    "Unipetrol" => [
-                        "nazev" => "Unipetrol RPA s.r.o.",
-                        "www" => "www.orlenunipetrolrpa.cz"],
-                    "ŘSD" => [
-                        "nazev" => "Ředitelství silnic a dálnic ČR",
-                        "www" => "www.rsd.cz"],
                     "LOXXES" => [
                         "nazev" => "LOXXESS Bor s.r.o.",
                         "www" => "www.loxxess.com/cz"],
-                    "Invelt" => [
-                        "nazev" => "Invelt – elektro s.r.o.",
-                        "www" => "www.invelt.com"],
-                    "Gihon" => [
-                        "nazev" => "Gihon a.s.",
-                        "www" => "rejstriky.finance.cz/firma-gihon-a-s-27960587"],
                     "Carrier" => [
                         "nazev" => "Carrier Refrigeration Operation Czech Rep. s.r.o.",
                         "www" => "www.carrier.com/commercial-refrigeration/cs/cz/"],
+                    "Sony" => [
+                        "nazev" => "Sony DADC Czech Republic, s.r.o.",
+                        "www" => "sonydadc.jobs.cz"],
+                    "Safran" => [
+                        "nazev" => "Safran Cabin CZ s.r.o.",
+                        "www" => "www.delamedoletadel.cz"],
+                    "Canpack" => [
+                        "nazev" => "Canpack Czech s.r.o.", "www" => "cz.canpack.com/#grow"
+                    ],
+                    "Invelt" => [
+                        "nazev" => "Invelt – elektro s.r.o.",
+                        "www" => "www.invelt.com"],
                 ]
             ]
         ],
